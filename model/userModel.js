@@ -2,7 +2,7 @@ import { DataTypes } from "sequelize";
 import { sequelize } from "../config/dbConnect.js";
 
 const UserModel = sequelize.define(
-  "Users",
+  "user",
   {
     firstName: {
       type: DataTypes.STRING,
@@ -27,7 +27,6 @@ const UserModel = sequelize.define(
   },
   {
     freezeTableName: true,
-    tableName:"users"
   }
 );
 

@@ -11,7 +11,7 @@ app.use(express.json());
 // UserModel.sync({ alter: true })
 const main = async () => {
   try {
-    await sequelize.sync({ force: true });
+    await sequelize.sync({ force: false });
     console.log("Database synchronized successfully.");
   } catch (error) {
     console.log("Error synchronized successfully.");
