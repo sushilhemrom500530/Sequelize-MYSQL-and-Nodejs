@@ -1,3 +1,4 @@
+import { userSchema } from "../middleware/userValidate.js";
 import { UserModel } from "../model/userModel.js";
 
 const createUser = async (req, res) => {
